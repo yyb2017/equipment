@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>益民医疗器材</title>
+    <!-- Bootstrap -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <!-- 头部 -->
+    <header id="header">
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" id='nav-btn' class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#">
+              <!-- logo -->
+                <h1>
+                  <img src="./image/logo.png" alt="">
+                </h1>
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="index.html" class="active">首页</a>
+                </li>
+                <li>
+                  <a href="product.html">产品展示</a>
+                </li>
+                <li>
+                  <a href="news.html">新闻动态</a>
+                </li>
+                <li>
+                  <a href="about.html">关于我们</a>
+                </li>
+                <li>
+                  <a href="contact%20.html">联系我们</a>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="./image/banner1.jpg" alt="...">
+        </div>
+        <div class="item">
+          <img src="./image/banner2.jpg" alt="...">
+        </div>
+        <div class="item">
+          <img src="./image/banner3.jpg" alt="...">
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control hidden-xs" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control hidden-xs" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- PC端下显示导航栏搜索栏 -->
+    <nav id='nav'class="navbar navbar-default">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">放射医疗设备<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">医用病床</a></li>
+            <li><a href="#">病房护理</a></li>
+            <li><a href="#">医疗用品</a></li>
+          </ul>
+          <form class="navbar-form navbar-right ">
+            <div class="form-group">
+              <input type="text" class="form-control">
+              <button type="button" class="form-btn">
+                 <i class="glyphicon glyphicon-search"></i>
+              </button>           
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- 手机端下显示搜索栏 -->
+    <div id="search" class="visible-xs">
+      <div class="container">
+           <form class="navbar-form navbar-right ">
+            <div class="form-group">
+              <input type="text" class="form-control">
+                <button type="button" class="form-btn"> 
+                   <i class="glyphicon glyphicon-search"></i>
+               </button>          
+            </div>
+            <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+          </form>   
+      </div>
+    </div>
+
+    <!-- 医疗器材 -->
+    <section id="eqpt" class="text-center">
+      <div class="container">
+          <div class="con-title">
+            <h2 class="wow bounceInDown">医疗器材</h2>
+            <h2 class="wow bounce">Medical Equipment</h2>
+            <p class="wow lightSpeedIn"></p>  
+          </div>
+          <div class="eqpt-main wow flipInX">
+	           <div class="eqpt-con">
+	            <div class="col-md-3 col-sm-3 col-xs-6 eqpt-item">
+	              <div class="eqpt-img-box">
+	                <div class="eqpt-img">
+	                  <a href="#">
+	                    <img src="./image/eqpt-1.jpg" alt="">
+	                    <span></span>
+	                  </a>            
+	                </div>   
+	                <div class="eqpt-info">
+	                  <h4><a href="#">正子发射断层扫描仪</a></h4>
+	                  <p>核医学成像技术，它为全身提供三维的和功能运作的图像。是目前唯一的用解剖...</p>
+	                </div>
+	                <div class="p-line">
+	                  <span>放射医疗设备</span>
+	                </div>
+	              </div>        
+	            </div>
+	          <div class="eqpt-con">
+	            <div class="col-md-3 col-sm-3 col-xs-6 eqpt-item">
+	              <div class="eqpt-img-box">
+	                <div class="eqpt-img">
+	                  <a href="#">
+	                    <img src="./image/eqpt-2.jpg" alt="">
+	                    <span></span>
+	                  </a>            
+	                </div>   
+	                <div class="eqpt-info">
+	                  <h4><a href="#">核磁共振检查仪</a></h4>
+	                  <p>通过外加梯度磁场检测所发射出的电磁波，据此可以绘制人体内部结构。</p>
+	                </div>
+	                <div class="p-line">
+	                  <span>放射医疗设备</span>
+	                </div>
+	              </div>        
+	            </div>
+	          <div class="eqpt-con">
+	            <div class="col-md-3 col-sm-3 col-xs-6 eqpt-item">
+	              <div class="eqpt-img-box">
+	                <div class="eqpt-img">
+	                  <a href="#">
+	                    <img src="./image/eqpt-3.jpg" alt="">
+	                    <span></span>
+	                  </a>            
+	                </div>   
+	                <div class="eqpt-info">
+	                  <h4><a href="#">超音波检查仪</a></h4>
+	                  <p>运用超声波的物理特性，通过电子工程技术对超声波发射、接收、转换及电子计...</p>
+	                </div>
+	                <div class="p-line">
+	                  <span>放射医疗设备</span>
+	                </div>
+	              </div>        
+	            </div>
+	          <div class="eqpt-con">
+	            <div class="col-md-3 col-sm-3 col-xs-6 eqpt-item">
+	              <div class="eqpt-img-box">
+	                <div class="eqpt-img">
+	                  <a href="#">
+	                    <img src="./image/eqpt-4.jpg" alt="">
+	                    <span></span>
+	                  </a>            
+	                </div>   
+	                <div class="eqpt-info">
+	                  <h4><a href="#">彩色B超机</a></h4>
+	                  <p>超声界的一大突破，将声波转换为图像，也就是我们所说的B超。通过超声探头...</p>
+	                </div>
+	                <div class="p-line">
+	                  <span>放射医疗设备</span>
+	                </div>
+	              </div>        
+	            </div>
+	          </div>
+	          <div class="eqpt-con">
+	            <div class="col-md-3 col-sm-3 col-xs-6 eqpt-item">
+	              <div class="eqpt-img-box">
+	                <div class="eqpt-img">
+	                  <a href="#">
+	                    <img src="./image/eqpt-5.jpg" alt="">
+	                    <span></span>
+	                  </a>            
+	                </div>   
+	                <div class="eqpt-info">
+	                  <h4><a href="#">正子发射断层扫描仪</a></h4>
+	                  <p>核医学成像技术，它为全身提供三维的和功能运作的图像。是目前唯一的用解剖...</p>
+	                </div>
+	                <div class="p-line">
+	                  <span>放射医疗设备</span>
+	                </div>
+	              </div>        
+	            </div>
+	          <div class="eqpt-con">
+	            <div class="col-md-3 col-sm-3 col-xs-6 eqpt-item">
+	              <div class="eqpt-img-box">
+	                <div class="eqpt-img">
+	                  <a href="#">
+	                    <img src="./image/eqpt-6.jpg" alt="">
+	                    <span></span>
+	                  </a>            
+	                </div>   
+	                <div class="eqpt-info">
+	                  <h4><a href="#">核磁共振检查仪</a></h4>
+	                  <p>通过外加梯度磁场检测所发射出的电磁波，据此可以绘制人体内部结构。</p>
+	                </div>
+	                <div class="p-line">
+	                  <span>放射医疗设备</span>
+	                </div>
+	              </div>        
+	            </div>
+	          <div class="eqpt-con">
+	            <div class="col-md-3 col-sm-3 col-xs-6 eqpt-item">
+	              <div class="eqpt-img-box">
+	                <div class="eqpt-img">
+	                  <a href="#">
+	                    <img src="./image/eqpt-7.jpg" alt="">
+	                    <span></span>
+	                  </a>            
+	                </div>   
+	                <div class="eqpt-info">
+	                  <h4><a href="#">牙齿治疗手术床</a></h4>
+	                  <p>核医学成像技术，它为全身提供三维的和功能运作的图像，是目前唯一的用解剖...</p>
+	                </div>
+	                <div class="p-line">
+	                  <span>放射医疗设备</span>
+	                </div>
+	              </div>        
+	            </div>
+	          <div class="eqpt-con">
+	            <div class="col-md-3 col-sm-3 col-xs-6 eqpt-item">
+	              <div class="eqpt-img-box">
+	                <div class="eqpt-img">
+	                  <a href="#">
+	                    <img src="./image/eqpt-8.jpg" alt="">
+	                    <span></span>
+	                  </a>            
+	                </div>   
+	                <div class="eqpt-info">
+	                  <h4><a href="#">急救升降平车</a></h4>
+	                  <p>具有无创伤性的特点，是目前临床上用以诊断和指导治疗肿瘤最佳手段之一。</p>
+	                </div>
+	                <div class="p-line">
+	                  <span>放射医疗设备</span>
+	                </div>
+	              </div>        
+	            </div>
+	          </div>          	
+          </div>  
+      </div>
+    </section>
+
+    <!-- 我们的优势 -->
+    <section id="adv">
+      <div class="container">
+        <div class="con-title">
+          <h2 class="wow rollIn">我们的优势</h2>
+          <h2 class="wow shake ">Our Advantage</h2>
+          <p class="wow swing"></p> 
+        </div> 
+        <div class="adv-main">
+          <div class="col-md-6 col-sm-6 col-xs-12 adv-box wow rollIn">
+            <div class="col-md-8 col-sm-8 col-xs-8 adv-con">
+              <h4>引进国外先进技术</h4>
+              <p>目前国内医疗设备生产企业较多，</p>
+              <p>大多数企业不可避免地以利润为目标，</p>
+              <p>公司形象与口碑得不到企业重视</p>
+              <p>产品与服务得不到医院认可。</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 adv-tec ">
+              <div class="adv-tec-img">
+                <img src="./image/advantage_technology.png" alt="">
+              </div>            
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 adv-box wow rollIn ">
+            <div class="col-md-4 col-sm-4 col-xs-4 adv-tec">
+              <div class="adv-tec-img">
+                <img src="./image/advantage_authentication.png" alt="">
+              </div>            
+            </div> 
+            <div class="col-md-8 col-sm-8 col-xs-8 adv-con">
+              <h4>全球多个国家认证</h4>
+              <p>益民医疗器械在全球范围内销售，</p>
+              <p>得到了中国ABCD，欧盟EF、</p>
+              <p>美国GHI等多个国家的认证，</p>
+              <p>并成为世界医疗卫生组织指定品牌。</p>
+            </div>         
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 adv-box wow rollIn">
+            <div class="col-md-8 col-sm-8 col-xs-8 adv-con">
+              <h4>低价位、高品质的典范</h4>
+              <p>选择到自己满意的产品。</p>
+              <p>不能一味地追求最低价位，</p>
+              <p>就是片面地追求某个知名品牌，</p>
+              <p>结果买回来的设备依然不满意。</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 adv-tec">
+              <div class="adv-tec-img">
+                <img src="./image/advantage_quality.png" alt="">
+              </div>            
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 adv-box wow rollIn">
+            <div class="col-md-4 col-sm-4 col-xs-4 adv-tec">
+              <div class="adv-tec-img">
+                <img src="./image/advantage_parts.png" alt="">
+              </div>            
+            </div> 
+            <div class="col-md-8 col-sm-8 col-xs-8 adv-con ">
+              <h4>全球多个国家认证</h4>
+              <p>专业的备用件仓库，益民有近3000平米</p>
+              <p>的仓库。其中备用件仓库就有300平米。</p>
+              <p>所有仓库，严格按照ISO9001标准执行。</p>
+              <p>这在行业内是极其少见的。</p>
+            </div>         
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- 我们的服务 -->
+    <section id="service">
+      <div class="container">
+        <div class="con-title">
+          <h2>我们的服务</h2>
+          <h2>Our Service</h2>
+          <p></p> 
+        </div> 
+        <div class="service-con">
+          <div class="col-md-3 col-sm-3 col-xs-6 service-con-box">
+            <div class="service-con-img wow bounceInDown">
+              <img src="./image/service1.jpg" alt="">                   
+                <div class="service-con-text">
+                  <span>质量承诺</span>
+                </div>
+            </div>
+            <div class="service-cons wow bounce ">
+              <p>国际品质，一流服务。</p>
+              <p>主设备壹年质保、终身维修。</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6 service-con-box">
+            <div class="service-con-img wow bounceInUp">
+              <img src="./image/service2.jpg" alt="">                   
+                <div class="service-con-text">
+                  <span>操作流程</span>
+                </div>
+            </div>
+            <div class="service-cons wow bounce ">
+              <p>付款后立即发货，保证20日</p>
+              <p>内设备到位及安装调试完好。</p>
+            </div>  
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6 service-con-box">
+            <div class="service-con-img wow bounceInDown">
+              <img src="./image/service3.jpg" alt="">                   
+                <div class="service-con-text">
+                  <span>售后服务</span>
+                </div>
+            </div>
+            <div class="service-cons wow bounce ">
+              <p>安装后7天内无理由退货，</p>
+              <p>24小时在线客服。</p>
+            </div>  
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6 service-con-box">
+            <div class="service-con-img wow bounceInUp">
+              <img src="./image/service4.jpg" alt="">                   
+                <div class="service-con-text">
+                  <span>产品性能</span>
+                </div>
+            </div>  
+            <div class="service-cons wow bounce ">
+              <p>专注做产品，严格把控质量，</p>
+              <p>用心服务，广大的市场口碑。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about-us">
+       <div class="container">
+          <div class="con-title clearfix">
+            <div class="pull-left">
+              <h2 class="wow bounceInDown">关于我们</h2>
+              <h2 class="wow rollIn">ABOUT US</h2>
+              <p class="wow bounceInRight "></p> 
+            </div>
+          </div> 
+          <div class="about-us-con wow pulse">
+            <div class="col-md-6">
+              <p>益民，全球著名医疗设备研发企业,专业从事高端大型医疗设备的研发、生产和销售工作。</p> 
+              <p>益民致力于医学成像领域已有近百年的历史，不仅为病人解决复杂的早期诊断问题，更能提供最先进的治疗方案。在中国，益民是最具影响力的品牌之一，并被评为”2010年度最具竞争力”的医疗器械企</p>
+              <p>益民总部位于中国珠海，全球子公司80多家，在全球170多个国家和地区都设有联络处。拥有数百名高级研发工程师。益民依赖最先进的技术优势，成为百年来大众一直最喜爱的企业之一。</p>             
+            </div>
+
+          </div>
+        </div>
+    </section>
+<!-- 资讯中心 -->
+    <section id="news">
+      <div class="container">
+          <div class="con-title">
+            <h2 class="wow bounceInRight ">资讯中心</h2>
+            <h2 class="wow bounceInDown">News</h2>
+            <p class="wow rollIn"></p>
+          </div> 
+          <div class="news-con">
+            <div class="col-md-6 col-sm-6 col-xs-12 news-wrap">
+              <div class="col-md-6 col-sm-6 col-xs-6 news-wrap-l">
+                  <div class="news-img  wow bounceInUp">
+                    <a href="#"><img src="./image/new1.jpg" alt=""></a>
+                  </div> 
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6 news-text">
+                  <h3><a href="#">益民医疗设备都有哪些优势？</a></h3>
+                  <p>在“新医改”的政策环境下，国家相关部门对DR设备研发投入了大量专项资金。同时，在医疗器械的采购方面优先采购国产医疗器械。当前卫生部开展的集中采购项目中，中标设备均以国产为主。专家预测，在未来的市场竞争中，国内品牌与外资品牌在中国医疗器械市场...</p>
+                  <div class="show-all">
+                    <a href="#">查看全文</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 news-wrap">
+              <div class="col-md-6 col-sm-6 col-xs-6 news-wrap-l">
+                  <div class="news-img  wow bounceInUp">
+                    <a href="#"><img src="./image/new2.jpg" alt=""></a>
+                  </div> 
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6 news-text">
+                  <h3><a href="#">DR平板探测器知识普及</a></h3>
+                  <p>DR与CR的共同点都是将X线影像信息转化为数字影像信息，其曝光宽容度相对于普通的增感屏-胶片系统体现出某些优势：CR和DR由于采用数字技术，动态范围广，都有很宽的曝光宽容度，因而允许照相中的技术误差，都有很宽的曝光宽容度，因而允许照相中的技术误差都有很宽</p>
+                  <div class="show-all">
+                    <a href="#">查看全文</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 news-wrap">
+              <div class="col-md-6 col-sm-6 col-xs-6 news-wrap-l">
+                  <div class="news-img  wow bounceInUp">
+                    <a href="#"><img src="./image/new3.jpg" alt=""></a>
+                  </div> 
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6 news-text">
+                  <h3><a href="#">拼搏！动力！珠海益民医疗设备制...</a></h3>
+                  <p>会议上销售精英刘双就自己的成单经验做了分享总结，她说：“这位(印度)客户是一名医生，当时与他谈的时候她除了咨询了关于设备的一系列问题之后还问了一些关于放射医疗的专业问题，当然最后还是一一解答了，最后在成交的时候出了一点小插曲，不过好在最后还...</p>
+                  <div class="show-all">
+                    <a href="#">查看全文</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 news-wrap">
+              <div class="col-md-6 col-sm-6 col-xs-6 news-wrap-l">
+                  <div class="news-img  wow bounceInUp">
+                    <a href="#"><img src="./image/new4.jpg" alt=""></a>
+                  </div> 
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6 news-text">
+                  <h3><a href="#">总局发布2017年第5期国家医...</a></h3>
+                  <p>国家食品药品监管总局公布了2017年第5期国家医疗器械质量公告，对手术衣、高频手术设备、总甲状腺素检测试剂等6个品种79批（台）产品的质量监督抽检情况进行了公告。其中被抽检项目不符合标准规定的医疗器械...</p>
+                  <div class="show-all">
+                    <a href="#">查看全文</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <div id="mask">
+      
+    </div>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-m ">
+           <div class="col-md-6 col-sm-6 footer-m-l hidden-xs wow bounceInRight">
+            <h3>
+              珠海益民
+            </h3>
+              <div class="footer-l-con">
+                <p>创建一流的学习型企业，每一位员工在益民都能获得一流的待遇，一流的学习，一流的成长。让每创建一流的学习型企业，每一位员工在益民都能获得一流的待遇，一流的学习，一流的成长。</p>
+                <p>让每一位员工更有价值。一位员工更有价值。益民将”用科技服务健康”作为企业使命，”为员工创造最美好的未来，为客户打造最优秀的产品”是珠海益民的发展宗旨。益民将”用科技服务健康”作为企业使命。</p>
+              </div>
+              <div class="footer-l-nav">
+                <ul>
+                  <li><a href="#">首页</a></li>
+                  <li><a href="#">产品展示</a></li>
+                  <li><a href="#">新闻动态</a></li>
+                  <li><a href="#">关于我们</a></li>
+                  <li><a href="#">联系我们</a></li>
+                </ul>
+              </div>
+              <div class="footer-l-copy">
+                <p>Copyright © 2017 . Zhuhai Yimin All rights reserved.</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-sm-6 footer-m-r wow bounceInLeft">
+             <h3>
+              联系方式
+            </h3>  
+              <div class="footer-r-pic">
+                <ul>
+                  <li class="col-md-6 col-sm-6">
+                    <span>电话：0786-5487XXX</span>
+                  </li>
+                  <li class="col-md-6 col-sm-6">                    
+                    <span>传真：0786-5487XXX</span>
+                  </li>
+                 <li class="col-md-6 col-sm-6">
+                    <span>Email:yimin@mail.com</span>
+                  </li>
+                  <li class="col-md-6 col-sm-6">                    
+                    <span>新浪微博：益民医疗器械</span>
+                  </li>
+                 <li class="col-md-6 col-sm-6">
+                    <span>微信公众号：益民医疗器械</span>
+                  </li>
+                  <li class="col-md-6 col-sm-6">                    
+                    <span>客服QQ：665789XXX</span>
+                  </li>
+                  <li class="col-md-12">                    
+                    <span>广东省珠海市横琴新区横琴工业区1栋A座</span>
+                  </li>
+                </ul>
+              </div>
+             <h3 class="last-title">
+              获取资讯
+            </h3> 
+             <form class="form-inline">
+              <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="姓名">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="邮箱">
+              </div>
+              <button type="submit" class="btn btn-default">提交</button>
+            </form>  
+            <div class="footer-l-copy visible-xs">
+                <p>Copyright © 2017 . Zhuhai Yimin All rights reserved.</p>
+            </div> 
+          </div>         
+        </div>
+
+      </div>
+    </footer>
+    <script type="text/javascript" src="./js/public.js"></script>
+	<script type="text/javascript" src="./js/wow.js"></script>
+	<script>
+		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+			new WOW().init();
+		};
+	</script>
+</script
+  </body>
+</html>
